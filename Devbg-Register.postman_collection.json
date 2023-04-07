@@ -1,0 +1,530 @@
+{
+	"info": {
+		"_postman_id": "b92c795b-eb09-495b-88bb-5927552e0275",
+		"name": "Devbg-Register",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26276213"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Paid holiday",
+					"item": [
+						{
+							"name": "paid holiday 20 days",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://dev.bg/company/jobs/automation-qa/?_job_location=remote&_paid_leave=77",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"bg"
+									],
+									"path": [
+										"company",
+										"jobs",
+										"automation-qa",
+										""
+									],
+									"query": [
+										{
+											"key": "_job_location",
+											"value": "remote"
+										},
+										{
+											"key": "_paid_leave",
+											"value": "77"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Team size",
+					"item": [
+						{
+							"name": "team 10-30 persons",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "https://dev.bg/company/jobs/automation-qa/?_job_location=remote&_it_employees_count=35",
+									"protocol": "https",
+									"host": [
+										"dev",
+										"bg"
+									],
+									"path": [
+										"company",
+										"jobs",
+										"automation-qa",
+										""
+									],
+									"query": [
+										{
+											"key": "_job_location",
+											"value": "remote"
+										},
+										{
+											"key": "_it_employees_count",
+											"value": "35"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Login with valid credentials-bug",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://dev.bg/wp-admin/admin-ajax.php",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"bg"
+							],
+							"path": [
+								"wp-admin",
+								"admin-ajax.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login with not valid credentials",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "become a partner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"country\": \"bg\",\r\n    \"subject\": \"Contact from www.LRworld.com\",\r\n    \"salutation\": \"Mr.\",\r\n    \r\n    \"senderEmail\": \"a@abv.bg\",\r\n    \"text\": \"a\",\r\n    \"city\": \"a\",\r\n    \"cityLabel\": \"City\",\r\n    \"contactMethod\": \"mail\",\r\n    \"contactMethodLabel\": \"How shall we contact you?\",\r\n    \"phone\": \"a11\",\r\n    \"phoneLabel\": \"Phone\",\r\n    \"postcode\": \"a\",\r\n    \"postcodeLabel\": \"Postcode\",\r\n    \"street\": \"a\",\r\n    \"streetLabel\": \"Street\",\r\n    \"termsDate\": \"2023-04-05T00:37:33+03:00\",\r\n    \"termsContent\": \"I agree to the disclosure of my account information to a qualified, freelance LR partner close to where I live through LR. We guarantee you to treat your data strictly confidential. Beyond that we will not circulate your data without your permission.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://prod-api.aws.lrworld.com/api/become-partner-contact-form",
+							"protocol": "https",
+							"host": [
+								"prod-api",
+								"aws",
+								"lrworld",
+								"com"
+							],
+							"path": [
+								"api",
+								"become-partner-contact-form"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "sofia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://dev.bg/company/jobs/automation-qa/?_job_location=sofiya",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"bg"
+							],
+							"path": [
+								"company",
+								"jobs",
+								"automation-qa",
+								""
+							],
+							"query": [
+								{
+									"key": "_job_location",
+									"value": "sofiya"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "select-remote",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://dev.bg/company/jobs/automation-qa/?_job_location=remote",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"bg"
+							],
+							"path": [
+								"company",
+								"jobs",
+								"automation-qa",
+								""
+							],
+							"query": [
+								{
+									"key": "_job_location",
+									"value": "remote"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Seniority",
+			"item": [
+				{
+					"name": "Junior",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://dev.bg/company/jobs/automation-qa/?_job_location=remote&_seniority=intern",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"bg"
+							],
+							"path": [
+								"company",
+								"jobs",
+								"automation-qa",
+								""
+							],
+							"query": [
+								{
+									"key": "_job_location",
+									"value": "remote"
+								},
+								{
+									"key": "_seniority",
+									"value": "intern"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "team lead",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://dev.bg/company/jobs/automation-qa/?_job_location=remote&_seniority=grand-master",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"bg"
+							],
+							"path": [
+								"company",
+								"jobs",
+								"automation-qa",
+								""
+							],
+							"query": [
+								{
+									"key": "_job_location",
+									"value": "remote"
+								},
+								{
+									"key": "_seniority",
+									"value": "grand-master"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Paid holiday",
+			"item": [
+				{
+					"name": "holiday 20 days",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://dev.bg/company/jobs/automation-qa/?_job_location=remote&_paid_leave=77",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"bg"
+							],
+							"path": [
+								"company",
+								"jobs",
+								"automation-qa",
+								""
+							],
+							"query": [
+								{
+									"key": "_job_location",
+									"value": "remote"
+								},
+								{
+									"key": "_paid_leave",
+									"value": "77"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter 21-25 days holiday",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dev.bg/company/jobs/automation-qa/?_job_location=remote&_paid_leave=78",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"bg"
+							],
+							"path": [
+								"company",
+								"jobs",
+								"automation-qa",
+								""
+							],
+							"query": [
+								{
+									"key": "_job_location",
+									"value": "remote"
+								},
+								{
+									"key": "_paid_leave",
+									"value": "78"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Size IT team",
+			"item": [
+				{
+					"name": "teamsize 10-30 people",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://dev.bg/company/jobs/automation-qa/?_job_location=remote&_it_employees_count=35",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"bg"
+							],
+							"path": [
+								"company",
+								"jobs",
+								"automation-qa",
+								""
+							],
+							"query": [
+								{
+									"key": "_job_location",
+									"value": "remote"
+								},
+								{
+									"key": "_it_employees_count",
+									"value": "35"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "teamsize 31-70 people",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://dev.bg/company/jobs/automation-qa/?_it_employees_count=37",
+							"protocol": "https",
+							"host": [
+								"dev",
+								"bg"
+							],
+							"path": [
+								"company",
+								"jobs",
+								"automation-qa",
+								""
+							],
+							"query": [
+								{
+									"key": "_it_employees_count",
+									"value": "37"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "register with filling only the field I am not a robot",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://v.clarity.ms/collect",
+					"protocol": "https",
+					"host": [
+						"v",
+						"clarity",
+						"ms"
+					],
+					"path": [
+						"collect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register only with field not a robot",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://v.clarity.ms/collect",
+					"protocol": "https",
+					"host": [
+						"v",
+						"clarity",
+						"ms"
+					],
+					"path": [
+						"collect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register without any credentials",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://v.clarity.ms/collect",
+					"protocol": "https",
+					"host": [
+						"v",
+						"clarity",
+						"ms"
+					],
+					"path": [
+						"collect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "REGISTER with not valid data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://v.clarity.ms/collect",
+					"protocol": "https",
+					"host": [
+						"v",
+						"clarity",
+						"ms"
+					],
+					"path": [
+						"collect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login with valid credentials",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://dev.bg/wp-admin/admin-ajax.php?action:=pvc-check-post&pvc_nonce: =aa5f3efb9f&id: =451",
+					"protocol": "https",
+					"host": [
+						"dev",
+						"bg"
+					],
+					"path": [
+						"wp-admin",
+						"admin-ajax.php"
+					],
+					"query": [
+						{
+							"key": "action:",
+							"value": "pvc-check-post"
+						},
+						{
+							"key": "pvc_nonce: ",
+							"value": "aa5f3efb9f"
+						},
+						{
+							"key": "id: ",
+							"value": "451"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
