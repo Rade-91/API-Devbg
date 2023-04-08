@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "0b536082-521e-42fc-88c1-5f1d75fd2a69",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26276213"
+	},
+	"item": [
+		{
+			"name": "create record in database",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"success\",\r\n    \"data\": {\r\n        \"name\": \"Rade\",\r\n        \"salary\": \"50000\",\r\n        \"age\": \"31\",\r\n        \"id\": 9613\r\n    },\r\n    \"message\": \"Successfully! Record has been added.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://dummy.restapiexample.com/api/v1/create"
+			},
+			"response": []
+		},
+		{
+			"name": "Login with valid credentials-bug",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "https://dev.bg/wp-admin/admin-ajax.php"
+			},
+			"response": []
+		},
+		{
+			"name": "login with not valid credentials",
+			"request": {
+				"method": "POST",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "become a partner",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"country\": \"bg\",\r\n    \"subject\": \"Contact from www.LRworld.com\",\r\n    \"salutation\": \"Mr.\",\r\n    \r\n    \"senderEmail\": \"a@abv.bg\",\r\n    \"text\": \"a\",\r\n    \"city\": \"a\",\r\n    \"cityLabel\": \"City\",\r\n    \"contactMethod\": \"mail\",\r\n    \"contactMethodLabel\": \"How shall we contact you?\",\r\n    \"phone\": \"a11\",\r\n    \"phoneLabel\": \"Phone\",\r\n    \"postcode\": \"a\",\r\n    \"postcodeLabel\": \"Postcode\",\r\n    \"street\": \"a\",\r\n    \"streetLabel\": \"Street\",\r\n    \"termsDate\": \"2023-04-05T00:37:33+03:00\",\r\n    \"termsContent\": \"I agree to the disclosure of my account information to a qualified, freelance LR partner close to where I live through LR. We guarantee you to treat your data strictly confidential. Beyond that we will not circulate your data without your permission.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://prod-api.aws.lrworld.com/api/become-partner-contact-form"
+			},
+			"response": []
+		}
+	]
+}
